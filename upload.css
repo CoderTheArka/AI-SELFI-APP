@@ -1,0 +1,111 @@
+*{
+    letter-spacing: 2px;
+    text-align: center;
+}
+.menu{
+    margin-top:0px;
+    background: none;
+    width: 100%;
+    list-style: none;
+    position:fixed;
+    top:0px;
+    cursor: pointer;
+    z-index: 10;
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+    .links{
+        color: black;
+        display: inline;
+        padding-left: 100px;
+        padding-right: 80px;
+        font-size:20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    .links:hover{
+      font-size: 30px;  
+      color: rebeccapurple;
+    
+    }
+    body{
+        background: linear-gradient(orange 20% , green 100%);
+        text-align: center;
+        align-items: center;
+    }
+    #cameradd{
+        font-size: 35px;
+        color: lightgoldenrodyellow;
+        border: 10px black;
+    }
+    #sss{
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-items: center;
+    }
+    #button{
+        height: 150px;
+        width: 200px;
+        background: linear-gradient(blue 0% , red 100%);
+    }
+    #img{
+        height: 115px;
+        width: 150px;  
+        background: linear-gradient(blue 0% , red 100%);
+    }
+    #go{
+        padding: 15px;
+        margin: 10px;
+        font-size: 25px;
+        color: white;
+        background-color: blue;
+        border-radius: 10px;
+    }
+    #bar{
+        height: 80px;
+        background-color: gray;
+        margin-bottom: 20px;
+        border: 8px black;
+        margin-top: 30px;
+    }
+    #P{
+        background: linear-gradient(blue , red);
+        height: 100%;
+        width: 0%;
+    }
+    #Pres{
+        font-size: 30px;
+    }
+    #dd{
+        text-align: center;
+    }
+    #fileText{
+        font-size: 25px;
+    }
+    #name{
+        margin-right: 20px;
+        margin-bottom :20px;
+        margin-top: 20px;
+        font-size: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 600px;
+        height: 40px;
+
+
+    }
+    #ext{
+        margin-right: 20px;
+        margin-bottom :20px;
+        margin-top: 20px;
+        font-size: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       color: red;
+       background-color: gray;
+
+    }
+    #hide{
+        display:none;
+    }

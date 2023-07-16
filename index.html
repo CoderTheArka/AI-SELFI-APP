@@ -1,0 +1,70 @@
+<html>
+    <head>
+    <title>AI SELFI APP</title>
+    <link rel="stylesheet" href="signin.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+    <body>
+    <div class="form-wrapper">
+  <h1>Sign In</h1>
+  <form onsubmit="return false">
+    <div class="form-item">
+      <label for="name"></label>
+      <input id="get23" type="text" required="required" placeholder="Name"></input>
+    </div>
+    <div class="button-panel">
+      <input id="user" type="submit" class="button" title="Sign In" ></input>
+    </div>
+  </form>
+  <div class="form-footer">
+    <p><a href="signup.html">Create an account</a></p>
+  </div>
+</div>
+    </body>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        import {  getDatabase, ref, set, onValue  } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
+        import { getStorage, ref as REF, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-storage.js";
+        import { getFirestore, doc, getDoc, setDoc, collection, addDoc} from "https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js";
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyB2XOFoiQNa0bQUbrF3rf1urQbgQF-NxfI",
+          authDomain: "mychatverification.firebaseapp.com",
+          databaseURL: "https://mychatverification-default-rtdb.firebaseio.com",
+          projectId: "mychatverification",
+          storageBucket: "mychatverification.appspot.com",
+          messagingSenderId: "54512205426",
+          appId: "1:54512205426:web:cba2367fc1556c35384ceb"
+        };
+        
+      
+      const app = initializeApp(firebaseConfig);
+        const database = getDatabase();
+        const clouddb = getFirestore();
+
+      
+user.addEventListener('click' , (e)=>{
+
+var get_name = document.getElementById('get23').value
+
+  const starCountRef = ref(database, 'users/' + get_name + '/');
+  onValue(starCountRef, (snapshot) =>{
+    const data = snapshot.val();
+    var get = data.username
+    var get_name = document.getElementById('get23').value
+   if(get_name == get){
+    alert('SUCCESFULL');
+    window.location = 'main.html';
+    localStorage.setItem('username' , get_name);
+   }else{
+  alert('USERNAME IS INVALID');
+   }
+  });
+});
+
+</script>      
+</html>

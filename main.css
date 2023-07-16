@@ -1,0 +1,83 @@
+.menu{
+    margin-top:0px;
+    background: none;
+    width: 100%;
+    list-style: none;
+    position:fixed;
+    top:0px;
+    cursor: pointer;
+    z-index: 10;
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+    .links{
+        color: black;
+        display: inline;
+        padding-left: 100px;
+        padding-right: 80px;
+        font-size:20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    .links:hover{
+      font-size: 30px;  
+      color: rebeccapurple;
+    
+    }
+    body{
+        background: linear-gradient(orange 20% , green 100%);
+        text-align: center;
+        float: none;
+        vertical-align:middle;
+    }
+#cameradd{
+    font-size: 35px;
+    color: lightgoldenrodyellow;
+    border: 10px black;
+}
+#note{
+    color: red;
+    font-size: 25px;
+}
+#start{
+    font-size: 25px;
+    padding: 10px;
+    border: 10px black;
+    border-radius: 20px;
+    background: linear-gradient(blue , red);
+    color: white;
+}
+textarea{
+    font-size: 40px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 60%;
+    text-align: center;
+
+}
+#jj{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+#camera{
+    width:360px;
+    height: 250px;
+    border:1px solid grey;
+    margin-left: 550px;
+
+}
+.container{
+    text-align: center;
+}
+#selfie_image :hover{
+border-radius: 50px;
+
+}
+#selfie_image{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 20px;
+}

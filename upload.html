@@ -1,0 +1,52 @@
+<html>
+    <head>
+    <title>AI SELFI APP</title>
+    <link rel="stylesheet" href="upload.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="upload.js"></script>
+    </head>
+    <body>
+        <ul class="nav navbar-nav">
+            <center>
+            <ul class="menu">
+            <li class="links"><a href="upload.html">UPLOAD</a></li>
+            <li class="links"><a href="main.html">CAMERA</a></li>
+            <li class="links"><a href="gallery.html">GALLREY</a></li>
+            <li class="links"><a onclick="localStorage.removeItem('username')" href="index.html">LOG OUT</a></li>
+            </ul> 
+            </center>
+        </ul><br><br>
+
+        <div class="container">
+            <h1 id="cameradd">UPLOAD</h1><br>
+                    <hr><br>
+
+
+        <input onchange="getFile(event)" id="select" style="display: none;" type="file" name="myImage" accept="image/png, image/gif, image/jpeg" />
+        <button id="button" onclick="start()"><img id="img" src="plus-icon-23574.png"></button><br><br>
+        <div>
+            <div id="hide">
+                <input id="name" maxlength="25"><label id="ext">ext</label>
+            </div>
+            <button id="go" onclick="go()">UPLOAD</button>
+        </div><br><br>
+        <span id="fileText"></span><br>
+        <div id="bar">
+          <div id="P">
+
+          </div>
+        </div>
+
+       <div id="Pres">0%</div>
+       </div><br><br>
+
+<div id="dd"> <img style="display: none;" id="show12" height="500px" width="550px"></div>
+      
+
+    </body>
+    </html>

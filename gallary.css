@@ -1,0 +1,53 @@
+*{
+    letter-spacing: 2px;
+    text-align: center;
+}
+.menu{
+    margin-top:0px;
+    background: none;
+    width: 100%;
+    list-style: none;
+    position:fixed;
+    top:0px;
+    cursor: pointer;
+    z-index: 10;
+    color: black;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+    .links{
+        color: black;
+        display: inline;
+        padding-left: 100px;
+        padding-right: 80px;
+        font-size:20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    .links:hover{
+      font-size: 30px;  
+      color: red;
+    
+    }
+    body{
+        background: linear-gradient(orange 20% , green 100%);
+        text-align: center;
+        align-items: center;
+    }
+    #cameradd{
+        font-size: 35px;
+        color: lightgoldenrodyellow;
+        border: 10px black;
+    }
+    #span{
+        text-align: center; 
+    }
+    #label{
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    #note{
+        color: red;
+        font-size: 25px;
+    }
